@@ -1,9 +1,14 @@
+# Repositório Dedicado às entregas de Spring Boot
+### Abaixo segue o link de cada TP e as respecitvas descrições.
+
 | Descrição | Link |
 |:---------:|:----:|
 | TP1 | [Link do TP1](https://github.com/ArielCAlves/spring-boot/tree/main/tp1) |
 | TP2 | [Link do TP2](https://github.com/ArielCAlves/spring-boot/tree/main/tp2) |
 | TP3 | Em Construção |
 | AT  | Em Construção |
+
+---
 
 # TP1 - Desenvolvimento de Serviços REST com Spring Boot
 
