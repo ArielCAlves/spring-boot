@@ -5,7 +5,7 @@
 |:---------:|:----:|
 | TP1 | [Link do TP1](https://github.com/ArielCAlves/spring-boot/tree/main/tp1) |
 | TP2 | [Link do TP2](https://github.com/ArielCAlves/spring-boot/tree/main/tp2) |
-| TP3 | Em Construção |
+| TP3 | [Link do TP3](https://github.com/ArielCAlves/spring-boot/tree/main/tp3) |
 | AT  | Em Construção |
 
 ---
@@ -59,9 +59,39 @@ Os recursos seguem o padrão RESTful e retornam códigos de status HTTP adequado
 - Spring Web  
 - Spring Data JPA  
 - Spring Validation  
-- Spring Actuator  
-- Flyway  
-- H2 Database (desenvolvimento)  
-- PostgreSQL (produção)  
+- Spring Actuator
+
+
+
+---
+
+# TP3 - Desenvolvimento de Serviços REST com persistência em Banco de Dados (em memória)
+
+## Descrição
+Este projeto foi desenvolvido como terceiro projeto da disciplina **Spring Boot**, com foco na implementação de um sistema de **CRUD completo** para gerenciamento de dados empresariais.  
+
+A aplicação expõe endpoints REST para realizar operações de **Create, Read, Update e Delete** sobre as seguintes entidades:  
+- **Funcionários (Employees)**  
+- **Produtos (Products)**  
+- **Fornecedores (Suppliers)**  
+- **Clientes (Customers)**  
+- **Categorias (Categories)**  
+
+Cada recurso é acessível através de métodos **GET, POST, PUT e DELETE**, retornando códigos de status HTTP adequados.  
+Os dados são persistidos utilizando **Spring Data JPA** com banco de dados **H2** em memória.  
+
+Foram também implementados **testes unitários** para validar as principais funcionalidades de cada serviço, garantindo confiabilidade e cobertura de código acima de 80%.
+
+---
+
+## Tecnologias Utilizadas
+- Java 17  
+- Spring Boot 3.5.5  
+- Spring Web  
+- Spring Data JPA  
+- H2 Database  
+- Spring Validation  
 - Lombok  
 - Maven  
+- JUnit 5  
+- Mockito  
