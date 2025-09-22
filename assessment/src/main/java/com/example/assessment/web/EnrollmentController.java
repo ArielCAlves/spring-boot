@@ -50,12 +50,18 @@ public class EnrollmentController {
     }
 
     @GetMapping("/discipline/{disciplineId}/approved")
-    public ResponseEntity<List<Enrollment>> approved(@PathVariable Long disciplineId) {
-        return ResponseEntity.ok(service.approved(disciplineId));
+    public ResponseEntity<List<EnrollmentSummary>> approved(@PathVariable Long disciplineId) {
+        var data = service.approved(disciplineId).stream()
+                .map(e -> new EnrollmentSummary(e.getId(), e.getStudent().getId(), e.getDiscipline().getId(), e.getGrade()))
+                .toList();
+        return ResponseEntity.ok(data);
     }
 
     @GetMapping("/discipline/{disciplineId}/reproved")
-    public ResponseEntity<List<Enrollment>> reproved(@PathVariable Long disciplineId) {
-        return ResponseEntity.ok(service.reproved(disciplineId));
+    public ResponseEntity<List<EnrollmentSummary>> reproved(@PathVariable Long disciplineId) {
+        var data = service.reproved(disciplineId).stream()
+                .map(e -> new EnrollmentSummary(e.getId(), e.getStudent().getId(), e.getDiscipline().getId(), e.getGrade()))
+                .toList();
+        return ResponseEntity.ok(data);
     }
 }
