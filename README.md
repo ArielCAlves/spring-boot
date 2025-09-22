@@ -6,7 +6,7 @@
 | TP1 | [Link do TP1](https://github.com/ArielCAlves/spring-boot/tree/main/tp1) |
 | TP2 | [Link do TP2](https://github.com/ArielCAlves/spring-boot/tree/main/tp2) |
 | TP3 | [Link do TP3](https://github.com/ArielCAlves/spring-boot/tree/main/tp3) |
-| AT  | Em Construção |
+| AT  | [Link do AT](https://github.com/ArielCAlves/spring-boot/tree/main/assessment) |
 
 ---
 
@@ -94,4 +94,36 @@ Foram também implementados **testes unitários** para validar as principais fun
 - Lombok  
 - Maven  
 - JUnit 5  
-- Mockito  
+- Mockito
+
+  ---
+
+# AT - Assessment
+
+## Descrição
+O **Assessment** foi desenvolvido como entrega final da disciplina **Spring Boot**, implementando um sistema completo de **CRUD** com as seguintes entidades sendo principais:  
+- **Alunos**  
+- **Disciplinas**  
+- **Notas**  
+
+A aplicação expõe endpoints REST que permitem:  
+- Cadastrar alunos e disciplinas  
+- Atribuir e atualizar notas  
+- Consultar desempenho dos alunos por disciplina  
+- Remover registros  
+
+Além do CRUD, foram implementadas regras de negócio para cálculo automático da **situação do aluno** (Aprovado, Reprovado, Em Recuperação).  
+
+---
+
+## Tecnologias Utilizadas
+- Java 17  
+- Spring Boot 3.5.6  
+- Spring Web  
+- Spring Data JPA  
+- H2 Database  
+- Spring Security  
+- Spring Validation  
+- Lombok  
+- Maven  
+- JUnit 5  
