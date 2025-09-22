@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: at-spring-boot
+    runtime: docker
+    plan: free
+    branch: main
+    rootDir: assessment
