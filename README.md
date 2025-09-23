@@ -127,3 +127,8 @@ Além do CRUD, foram implementadas regras de negócio para cálculo automático 
 - Lombok  
 - Maven  
 - JUnit 5  
+
+---
+## Importante
+Subi o executável .jar dentro da pasta out para poder cumprir as rubricas do Assessment.
+Para executar de modo local basta navegar até a raiz do projeto (assessment) e executar `java -jar out/assessment-0.0.1-SNAPSHOT.jar`
